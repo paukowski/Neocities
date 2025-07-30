@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <style>
+    
     body {
-        background-color: black;
+        background-image: url('images/bg/neo_noise_comp.gif');
+        background-size: cover;
         color: white;
         font-family: Helvetica;
-}
+    }
+
     p.title {
         margin-top: 5px;
         margin-bottom: 0px;
@@ -17,8 +20,11 @@
         margin-left: 15px;
         font-size: x-small
     }
+
     #title {
         border: white 5px solid;
+        background-color: black;
+        background-size: cover;
         width: 350px;
         height: 175px;
         padding-right: 0px;
@@ -27,10 +33,15 @@
     
     #gorg {
         border: white 5px solid;
+        background-color: black;
+        background-size: cover;
         width: 175px;
         height: 175px;
-        margin-top: 10px;
+        margin-top: 5px;
         margin-left: 175px;
+        display: flex;
+        flex-direction: flex-start;
+        align-items: center;
     }
     
     #description {
@@ -39,6 +50,7 @@
         padding-left: 175px;
         width: 175px;
         word-wrap: break-word;
+        display: flex;
     }
     
     #top {
@@ -50,15 +62,32 @@
         display: flex;
         flex-direction: column;
         margin-left: 10px;
-        margin-top: 0px;
+        margin-top: 60px;
     }
     
     #sublinks {
         font-size: medium;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
-    
+
+    #wrapper {
+        width: 40%;
+        margin: 0 auto;
+        transform: scale(1.4);
+        transform-origin: top
+    }
+
+    #photozone {
+        border: white 5px solid;
+        margin-left: 10px;
+        width: 350px;
+        height: 262px;
+        display: flex;
+        flex-direction: row;
+        vertical-align: top;
+    }
+
     span {
         color: darkgrey
     }
@@ -70,29 +99,44 @@
     </head>
     
     <body>
-        <div id = "top">
-            <div id ="title">
-                <p class = "title"><b>PRESUMABLY</b></p>
-                <p class = "title"><b>GEORGE</b></p>
-                <p class = "subtitle">the <span>sensations</span> you feel are entirely real!</p>
-            </div>
-            <div id = "links">
-                <p style = "margin-top: 0px; margin-bottom: 0px;">big things in the works™:</p>
-                <div id = "sublinks">
-                    <a href="https://paukowski.bandcamp.com/">i write music</a>
-                    <a href="https://www.instagram.com/_paukowski/">i do photos sometimes</a>
-                    <a href="https://paukowski.itch.io/">i will hopefully make a game</a>
-                    <a href="https://github.com/paukowski">and will, hopefully, keep it functionall</a>
-                    <p style = "font-size: xx-small; margin-top: 0px"> todo: some fancy icons for the links</p>
+        <div id = "wrapper">
+            <div id = "top">
+                <div id ="title">
+                    <p class = "title"><b>PRESUMABLY</b></p>
+                    <p class = "title"><b>GEORGE</b></p>
+                    <p class = "subtitle">the <span>sensations</span> you feel are entirely real.</p>
+                </div>
+                <div id = "links">
+                    <p style = "margin-top: 0px; margin-bottom: 0px;">big things are in the works&#8482:</p>
+                    <div id = "sublinks">
+                        <p><a href="https://paukowski.bandcamp.com/"><img src = "images/icons/bandcamp.png" 
+                            style="width: 70%; margin-top: 0px; margin-bottom: 0px; margin-right: 0px; margin-left: 0px;"></a></p>
+                        <p><a href="https://paukowski.bandcamp.com/"><img src = "images/icons/instagram.png" 
+                            style="width: 70%; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
+                        <p><a href="https://paukowski.bandcamp.com/"><img src = "images/icons/itch.png"
+                            style="width: 70%; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
+                        <p><a href="https://paukowski.bandcamp.com/"><img src = "images/icons/github.png" 
+                            style="width: 70%; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id = "gorg">
-            <img src = "images/gorg_white.png"
-            style = "width: 175px; margin-top: 10px;">
-        </div>
-        <div id="description">
-            <p class = "description"> this little website is presumably, maybe, potentially, hopefully should eventually become a dedicated place for all that is of my doing - but for now serves as a trqining ground for my silly little html learning adventure.</p>
+            <div id = "gorg">
+                <img src = "images/gorg_white.png"
+                style = "width: 175px; margin-top: 10px;">
+            <div id = "photozone">
+                <script>
+                    const photo_array = [
+                        "view1.jpg",
+                        "view2.jpg"
+                    ];
+                    var i = Math.floor(photo_array.length * Math.random());
+                    document.write(`<img src = "images/photozone/${photo_array[i]}" style = "width: 350px"; height: 262px">`);
+                </script>
+            </div>
+            </div>
+            <div id="description">
+                <p class = "description"> this little website presumably, maybe, potentially, hopefully should eventually become a dedicated place for all that is of my doing - but for now serves as a trqining ground for my silly little html learning adventure. there's also a <a href="https://paukowski.neocities.org/georgeblog/", style="color: aqua">blog page</a> now.</p>
+            </div>
         </div>
     </body>
 </html>
