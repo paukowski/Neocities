@@ -1,14 +1,10 @@
 name: Deploy to neocities
 
-# only run on changes to master
+# only run on changes to main. Use main or master depending on whatever your default branch is called.
 on:
   push:
     branches:
       - main
-
-env:
-  FORCE_COLOR: 1
-  node_version: lts/*
 
 concurrency: # prevent concurrent deploys doing strange things
   group: deploy-to-neocities
@@ -18,13 +14,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    steps:
+    # The checkout step copies your repo into the action runner. Important!
+    - uses: actions/checkout@v4
     # When the dist_dir is ready, deploy it to neocities
+    # Here we deploy the folder named `public`
     - name: Deploy to neocities
-      uses: bcomnes/deploy-to-neocities@master # dont use master in production
+      uses: bcomnes/deploy-to-neocities@v3
       with:
         api_key: ${{ secrets.NEOCITIES_API_KEY }}
-        cleanup: true
-        dist_dir: public
-        protected_files: 'dropbox/*'
+        cleanup: false
         neocities_supporter: false # set this to true if you have a supporter account and want to bypass unsuported files filter.
-        preview_before_deploy: true
+        preview_before_deploy: true # print a deployment plan prior to waiting for files to upload.
+        dist_dir: public
