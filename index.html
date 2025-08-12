@@ -18,7 +18,8 @@
     p.subtitle {
         margin-top: 15px;
         margin-left: 15px;
-        font-size: x-small
+        font-size: x-small;
+        color: darkgrey
     }
 
     #title {
@@ -27,8 +28,9 @@
         background-size: cover;
         width: 350px;
         height: 175px;
+        min-width: 350px;
         padding-right: 0px;
-        padding-top: 0px;
+        padding-top: 10px;
     }
     
     #gorg {
@@ -51,6 +53,8 @@
         width: 175px;
         word-wrap: break-word;
         display: flex;
+        margin-top: -5px;
+        margin-left: 2px;
     }
     
     #top {
@@ -61,8 +65,10 @@
     #links {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        min-width: 350px;
         margin-left: 10px;
-        margin-top: 60px;
+        margin-top: 75px;
     }
     
     #sublinks {
@@ -72,16 +78,18 @@
     }
 
     #wrapper {
-        width: 40%;
-        margin: 0 auto;
-        transform: scale(1.4);
-        transform-origin: top
+        margin: auto;
+        width: fit-content;
+        max-width: 100%;
+        transform: scale(calc(100vw / 1024)); /* if original layout is ~1024px wide */
+        transform-origin: top left;
     }
 
     #photozone {
         border: white 5px solid;
         margin-left: 10px;
         width: 350px;
+        min-width: 350px;
         height: 262px;
         display: flex;
         flex-direction: row;
@@ -96,27 +104,40 @@
 <html lang = "en">
     <head>
         <title>paukowski.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" href="./images/gorg_white.png" type="image/x-icon"/>
     </head>
     
     <body>
         <div id = "wrapper">
             <div id = "top">
                 <div id ="title">
-                    <p class = "title"><b>PRESUMABLY</b></p>
                     <p class = "title"><b>GEORGE</b></p>
-                    <p class = "subtitle">the <span>sensations</span> you feel are entirely real.</p>
+                    <p class = "title"><b>PAUKOWSKI</b></p>
+                    <p class = "subtitle">                
+                        <script>
+                        const desc_array = [
+                            "the sensations you feel are entirely real.",
+                            'print("wonders!")',
+                            "active supporter of not this.",
+                            "my condition has its advantages!",
+                        ];
+                        var i = Math.floor(desc_array.length * Math.random());
+                        document.write(`${desc_array[i]}`);
+                        </script>
+                    </p>
                 </div>
                 <div id = "links">
                     <p style = "margin-top: 0px; margin-bottom: 0px;">big things are in the works&#8482:</p>
                     <div id = "sublinks">
                         <p><a href="https://paukowski.bandcamp.com/"><img src = "images/icons/bandcamp.png" 
-                            style="width: 70%; margin-top: 0px; margin-bottom: 0px; margin-right: 0px; margin-left: 0px;"></a></p>
-                        <p><a href="https://paukowski.bandcamp.com/"><img src = "images/icons/instagram.png" 
-                            style="width: 70%; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
-                        <p><a href="https://paukowski.bandcamp.com/"><img src = "images/icons/itch.png"
-                            style="width: 70%; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
-                        <p><a href="https://paukowski.bandcamp.com/"><img src = "images/icons/github.png" 
-                            style="width: 70%; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
+                            style="width: 32px; height: 32px; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
+                        <p><a href="https://www.instagram.com/_paukowski/"><img src = "images/icons/instagram.png" 
+                            style="width: 32px; height: 32px; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
+                        <p><a href="https://paukowski.itch.io/"><img src = "images/icons/itch.png"
+                            style="width: 32px; height: 32px; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
+                        <p><a href="https://github.com/paukowski/"><img src = "images/icons/github.png" 
+                            style="width: 32px; height: 32px; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
                     </div>
                 </div>
             </div>
@@ -127,7 +148,10 @@
                 <script>
                     const photo_array = [
                         "view1.jpg",
-                        "view2.jpg"
+                        "view2.jpg",
+                        "view3.jpg",
+                        "view4.jpg",
+                        "view6.jpg",
                     ];
                     var i = Math.floor(photo_array.length * Math.random());
                     document.write(`<img src = "images/photozone/${photo_array[i]}" style = "width: 350px"; height: 262px">`);

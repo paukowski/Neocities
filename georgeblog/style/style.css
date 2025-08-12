@@ -80,7 +80,8 @@ h1, h2, h3, h4, h5 {
 
 /*HEADER STYLE*/
 #header {
-  background-color: gr;
+  background-color: skyblue;
+  background-size: cover;
   padding: 0 5%;
   border-color: #a9a9a9;
   border-style: ridge;
@@ -99,9 +100,9 @@ h1, h2, h3, h4, h5 {
   margin-top: 0.2em;
 }
 #header li a {
-  color: white;
+  color: black;
   text-decoration: none;
-  background-color: inherit;
+  background-color: blac;
 }
 #header li a:hover {
   text-decoration: underline;
