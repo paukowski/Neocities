@@ -1,14 +1,5 @@
 <!doctype html>
 <style>
-    /* schoolbell-regular - latin */
-    @font-face {
-        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: "Schoolbell";
-        font-style: normal;
-        font-weight: 400;
-        src: url("fonts/schoolbell-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-    }
-
     body {
         background-image: url("images/bg/neo_noise_comp.gif");
         background-size: cover;
@@ -28,9 +19,6 @@
 
     #title {
         font-size: 3vh;
-        border: white 0.4vh solid;
-        background-color: black;
-        background-size: cover;
         padding: 0.5vh;
         width: fit-content;
         align-self: center;
@@ -42,7 +30,9 @@
     }
 
     #buttons {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family:
+            "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
         font-size: 4vh;
         div {
             margin: 0.8vh;
@@ -63,7 +53,8 @@
     #copyright {
         font-size: xx-small;
         align-self: center;
-        margin-top: 18vh;
+        position: fixed;
+        bottom: 5vh;
         max-width: 50vh;
         vertical-align: bottom;
     }
@@ -71,7 +62,7 @@
 
 <html lang="en">
     <head>
-        <title>BRAIN DEATH COLOR VOMIT</title>
+        <title>flashing lights. part 1</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="./images/gorg_white.png" type="image/x-icon" />
     </head>
@@ -79,15 +70,17 @@
         <div id="wrapper">
             <div id="cover">
                 <img
-                    src="images/covers/bdcv.png"
-                    style="width: 30vh; margin-bottom: 1vh"
+                    src="images/flights/mark2.png"
+                    style="width: 25vh; margin-bottom: -1vh"
                 />
             </div>
-            <div id="title">BRAIN DEATH COLOR VOMIT</div>
+            <div id="title">
+                <img src="images/flights/pt1 logo.png" style="width: 50vh" />
+            </div>
             <div id="subtitle">the album is available on:</div>
             <div id="buttons">
                 <a
-                    href="https://youtu.be/RxUqYE7FF9M"
+                    href="https://www.youtube.com/watch?v=Y8ETCs9y4okM"
                     ,
                     style="text-decoration: none; color: white"
                     ><div id="youtube">
@@ -98,7 +91,7 @@
                     </div></a
                 >
                 <a
-                    href="https://paukowski.bandcamp.com/album/brain-death-color-vomit"
+                    href="https://paukowski.bandcamp.com/album/flashing-lights-part-1"
                     ,
                     style="text-decoration: none; color: white"
                     ><div id="bandcamp">
@@ -116,7 +109,7 @@
                         <img
                             src="images/icons/spotify.png"
                             style="width: 4vh; vertical-align: middle"
-                        />spotify
+                        />coming soon
                     </div></a
                 >
                 <a
@@ -127,7 +120,7 @@
                         <img
                             src="images/icons/apple.png"
                             style="width: 4vh; vertical-align: middle"
-                        />apple music
+                        />coming soon
                     </div></a
                 >
             </div>
