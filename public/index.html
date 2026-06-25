@@ -1,174 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <style>
-    
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: "Schoolbell";
+        font-style: normal;
+        font-weight: 400;
+        src: url("fonts/schoolbell-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
     body {
-        background-image: url('images/bg/neo_noise_comp.gif');
-        background-size: cover;
-        color: white;
-        font-family: Helvetica;
-    }
-
-    p.title {
-        margin-top: 5px;
-        margin-bottom: 0px;
-        margin-left: 10px;
-        font-size: xxx-large;
-    }
-    
-    p.subtitle {
-        margin-top: 15px;
-        margin-left: 15px;
-        font-size: x-small;
-        color: darkgrey
-    }
-
-    #title {
-        border: white 5px solid;
         background-color: black;
-        background-size: cover;
-        width: 350px;
-        height: 175px;
-        min-width: 350px;
-        padding-right: 0px;
-        padding-top: 10px;
     }
-    
+
     #gorg {
-        border: white 5px solid;
-        background-color: black;
-        background-size: cover;
-        width: 175px;
-        height: 175px;
-        margin-top: 5px;
-        margin-left: 175px;
         display: flex;
-        flex-direction: flex-start;
+        justify-content: center;
         align-items: center;
+        padding-top: 20vh;
     }
-    
-    #description {
-        font-family: "Times New Roman", Times, serif;
-        font-size: xx-small;
-        padding-left: 175px;
-        width: 175px;
-        word-wrap: break-word;
+
+    #message {
         display: flex;
-        margin-top: -5px;
-        margin-left: 2px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20vh;
+        color: white;
+        font-family: "Schoolbell";
+        font-size: 4vh;
+        padding: 0vh;
+        text-align: center;
+        margin-bottom: -4vh;
     }
-    
-    #top {
-        display: flex;
-        align-items: flex-start;
-    }
-    
+
     #links {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        min-width: 350px;
-        margin-left: 10px;
-        margin-top: 75px;
-    }
-    
-    #sublinks {
-        font-size: medium;
-        display: flex;
-        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
     }
 
-    #wrapper {
-        margin: auto;
-        width: fit-content;
-        max-width: 100%;
-        transform: scale(calc(100vw));
-        transform-origin: top left;
-    }
-
-    #photozone {
-        border: white 5px solid;
-        margin-left: 10px;
-        width: 350px;
-        min-width: 350px;
-        height: 262px;
-        display: flex;
-        flex-direction: row;
-        vertical-align: top;
-    }
-    #event_header {
-        margin-top: -2rem;
-        white-space: nowrap
-    }
-    span {
-        color: darkgrey
-        }
 </style>
-
-<html lang = "en">
-    <head>
-        <title>paukowski.</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="icon" href="./images/gorg_white.png" type="image/x-icon"/>
-    </head>
-    
-    <body>
-        <div id = "wrapper">
-            <div id = "top">
-                <div id ="title">
-                    <p class = "title"><b>GEORGE</b></p>
-                    <p class = "title"><b>PAUKOWSKI</b></p>
-                    <p class = "subtitle">                
-                        <script>
-                        const desc_array = [
-                            "the sensations you feel are entirely real.",
-                            'print("wonders!")',
-                            "active supporter of not this.",
-                            "my condition has its advantages!",
-                            "brain death color vomit"
-                        ];
-                        var i = Math.floor(desc_array.length * Math.random());
-                        document.write(`${desc_array[i]}`);
-                        </script>
-                    </p>
-                </div>
-                <div id = "links">
-                    <p style = "margin-top: 0px; margin-bottom: 0px;">big things are in the works&#8482:</p>
-                    <div id = "sublinks">
-                        <p><a href="https://paukowski.bandcamp.com/"><img src = "images/icons/bandcamp.png" 
-                            style="width: 32px; height: 32px; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
-                        <p><a href="https://bsky.app/profile/paukowski.bsky.social"><img src = "images/icons/bluesky.png" 
-                            style="width: 32px; height: 32ww.instagram.com/_paukowskipx; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
-                        <p><a href="https://www.youtube.com/@_paukowski"><img src = "images/icons/youtube.png"
-                            style="width: 32px; height: 32px; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
-                        <p><a href="https://github.com/paukowski/"><img src = "images/icons/github.png" 
-                            style="width: 32px; height: 32px; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;"></a></p>
-                    </div>
-                </div>
-            </div>
-            <div id = "gorg">
-                <img src = "images/gorg_white.png"
-                style = "width: 175px; margin-top: 10px;">
-            <div id = "photozone">
-                <script>
-                    const photo_array = [
-                        "view1.jpg",
-                        "view2.jpg",
-                        "view3.jpg",
-                        "view4.jpg",
-                        "view6.jpg",
-                    ];
-                    var i = Math.floor(photo_array.length * Math.random());
-                    document.write(`<img src = "images/photozone/${photo_array[i]}" style = "width: 350px"; height: 262px">`);
-                </script>
-            </div>
-            </div>
-            <div id="description">
-                <p class = "description"> this little website presumably, maybe, potentially, hopefully should eventually become a dedicated place for all that is of my doing - but for now serves as a trqining ground for my silly little html learning adventure. there's also a <a href="https://paukowski.neocities.org/georgeblog/", style="color: aqua">blog page</a> now.</p>
-            </div>
-            <div id = "event_header">
-                <p style="margin-left: 30rem" "wrap"><a href="https://paukowski.neocities.org/georgeblog/posts/2026-01-10-what-remains-of-the-stargazer.html", style="color: aqua">the stars are brighter than usual tonight.</a></p>
-                <a href="https://paukowski.bandcamp.com/album/what-remains-of-the-stargazer"><img src="https://file.garden/aI1FMbWBQUP6_nE6/sgcoverfin.png"; style="width: 12rem; border: white 5px solid; margin-left: 32.6rem"></a>
-            </div>
-        </div>
-    </body>
+<html>
+    <div id="gorg">
+        <img src="images/logos/gorgdude black.png" / style="width: 20vh;">
+    </div>
+    <div id="message">
+        <p>this page is undergoing renovations. <br> in the meantime,  you can find me here:</p>
+    </div>
+    <div id="links">
+        <a href="https://www.youtube.com/@paukowski"><img src="images/icons/youtube.png" style="width: 8vh;"></a>
+        <a href="https://paukowski.bandcamp.com/music"><img src="images/icons/bandcamp.png" style="width: 8vh;"></a>
+    </div>
 </html>
