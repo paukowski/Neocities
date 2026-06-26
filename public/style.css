@@ -17,7 +17,7 @@ body {
 }
 
 #logo {
-    margin-bottom: -5vh;
+    margin-bottom: -3vh;
 }
 
 #linkbar {
@@ -27,17 +27,25 @@ body {
     font-family: "Schoolbell";
     border: grey;
     flex-direction: row;
-    p {
-        margin-left: 7vh;
-        padding-right: 7vh;
+    a:any-link {
+        padding-top: 3vh;
+        margin-left: 2vw;
+        padding-right: 2vw;
+        color: white;
+        text-decoration: none;
+        padding-bottom: 4vh;
+    }
+    a:hover {
+        color: grey;
     }
 
     #content {
-        border-color: white;
-        border: solid;
+        background-color: white;
     }
 
     #photozone {
-        border: white;
+        width: 5vw;
+        height: 5vw;
+        overflow: hidden;
     }
 }

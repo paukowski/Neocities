@@ -7,23 +7,26 @@
         </div>
         <link rel="stylesheet" href="style.css" />
         <div id="linkbar">
-            <p>index</p>
-            <p>portfolio</p>
-            <p>about</p>
+            <a href="google.com">index</a>
+            <a href="google.com">portfolio</a>
+            <a href="google.com">about</a>
         </div>
-        <div id="photozone">
-            <script>
-                const photo_array = [
-                    "view1.jpg",
-                    "view2.jpg",
-                    "view3.jpg",
-                    "view4.jpg",
-                    "view6.jpg",
-                ];
-                var i = Math.floor(photo_array.length * Math.random());
-                document.write(
-                    `<img src = "images/photozone/${photo_array[i]}" style = "width: 350px"; height: 262px">`,
-                );
-            </script>
-        </div>f
+        <div id="content">
+            <div id="photozone">
+                <script>
+                    const photo_array = [
+                        "view1.jpg",
+                        "view2.jpg",
+                        "view3.jpg",
+                        "view4.jpg",
+                        "view6.jpg",
+                    ];
+                    var i = Math.floor(photo_array.length * Math.random());
+                    document.write(
+                        `<img src = "images/photozone/${photo_array[i]}" style = "width: 30vw"; height: 30vw;">`,
+                    );
+                </script>
+            </div>
+        </div>
+    </div>
 </html>
