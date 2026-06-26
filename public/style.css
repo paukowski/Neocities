@@ -9,22 +9,35 @@
 body {
     background-color: black;
 }
-
-#logo {
+#wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+#logo {
+    margin-bottom: -5vh;
 }
 
 #linkbar {
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 5vh;
     color: white;
     font-family: "Schoolbell";
     border: grey;
-    div {
-        border: grey;
+    flex-direction: row;
+    p {
+        margin-left: 7vh;
+        padding-right: 7vh;
+    }
+
+    #content {
+        border-color: white;
+        border: solid;
+    }
+
+    #photozone {
+        border: white;
     }
 }
