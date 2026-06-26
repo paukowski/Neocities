@@ -17,23 +17,23 @@ body {
 }
 
 #logo {
-    margin-bottom: -3vh;
+    margin-bottom: -2vw;
 }
 
 #linkbar {
     display: flex;
-    font-size: 5vh;
+    font-size: 2vw;
     color: white;
     font-family: "Schoolbell";
     border: grey;
     flex-direction: row;
     a:any-link {
-        padding-top: 3vh;
+        padding-top: 2vw;
         margin-left: 2vw;
         padding-right: 2vw;
         color: white;
         text-decoration: none;
-        padding-bottom: 4vh;
+        padding-bottom: 2vw;
     }
     a:hover {
         color: grey;
