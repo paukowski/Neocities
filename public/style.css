@@ -26,13 +26,13 @@ body {
     flex-direction: column;
     align-items: center;
     img {
-        width: 100vmin;
-        max-width: 600px;
-        min-width: 100px;
+        width: 90vmin;
+        max-width: 400px;
+        min-width: 300px;
     }
 }
 #header-links {
-    font-size: 3rem;
+    font-size: 2.5rem;
     display: flex;
     flex-direction: row;
     gap: 2vw;
