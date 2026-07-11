@@ -38,3 +38,24 @@ body {
     font-family: "Schoolbell";
     align-items: center;
 }
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vmin;
+    max-width: 700px;
+    color: white;
+}
+
+#box1 {
+    width: 200px;
+    height: 200px;
+    border: 5px white solid;
+}
+
+#box2 {
+    width: 400px;
+    height: 200px;
+    border: 5px white solid;
+}
