@@ -28,8 +28,6 @@ body {
     align-items: center;
     img {
         width: 30vw;
-        max-width: 1920px;
-        min-width: 700px;
     }
 }
 #header-links {
