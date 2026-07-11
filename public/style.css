@@ -27,8 +27,8 @@ body {
     align-items: center;
     img {
         width: 90vmin;
-        max-width: 400px;
-        min-width: 300px;
+        max-width: 500px;
+        min-width: 500px;
     }
 }
 #header-links {
