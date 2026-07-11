@@ -1,32 +1,15 @@
 <!doctype html>
 
 <html lang="en">
-    <div id="wrapper">
-        <div id="logo">
-            <img src="images/logos/headerlogo.png" style="width: 20vw" />
+    <link rel="stylesheet" href="style.css" />
+    <div id="header">
+        <div id="header-logo">
+            <img src="images/logos/headerlogo.png" style="width: 1400px" />
         </div>
-        <link rel="stylesheet" href="style.css" />
-        <div id="linkbar">
-            <a href="google.com">index</a>
-            <a href="google.com">portfolio</a>
-            <a href="google.com">about</a>
-        </div>
-        <div id="content">
-            <div id="photozone">
-                <script>
-                    const photo_array = [
-                        "view1.jpg",
-                        "view2.jpg",
-                        "view3.jpg",
-                        "view4.jpg",
-                        "view6.jpg",
-                    ];
-                    var i = Math.floor(photo_array.length * Math.random());
-                    document.write(
-                        `<img src = "images/photozone/${photo_array[i]}" style = "width: 30vw"; height: 30vw;">`,
-                    );
-                </script>
-            </div>
+        <div id="header-links">
+            <a>index</a>
+            <a>portfolio</a>
+            <a>about</a>
         </div>
     </div>
 </html>

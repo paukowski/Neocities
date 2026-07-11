@@ -1,0 +1,52 @@
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Schoolbell";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/schoolbell-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+    background-color: black;
+}
+#wrapper {
+    width: 90%;
+    justify-self: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo {
+    margin-bottom: -2vw;
+}
+
+#linkbar {
+    display: flex;
+    font-size: 2vw;
+    color: white;
+    font-family: "Schoolbell";
+    border: grey;
+    flex-direction: row;
+    a:any-link {
+        padding-top: 2vw;
+        margin-left: 2vw;
+        padding-right: 2vw;
+        color: white;
+        text-decoration: none;
+        padding-bottom: 2vw;
+    }
+    a:hover {
+        color: grey;
+    }
+
+    #content {
+        background-color: white;
+    }
+
+    #photozone {
+        border: white 5vh solid;
+    }
+}
