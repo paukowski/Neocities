@@ -18,7 +18,6 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-size: 3vw;
     flex-wrap: wrap;
 }
 
@@ -27,10 +26,13 @@ body {
     flex-direction: column;
     align-items: center;
     img {
-        width: 30vw;
+        width: 90%;
+        max-width: 1920px;
+        min-width: 700px;
     }
 }
 #header-links {
+    font-size: 5rem;
     display: flex;
     flex-direction: row;
     gap: 2vw;
