@@ -27,7 +27,7 @@ body {
     align-items: center;
     img {
         width: 70%;
-        max-width: 1080px;
+        max-width: 1920px;
         min-width: 700px;
     }
 }
