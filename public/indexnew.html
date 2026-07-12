@@ -14,8 +14,28 @@
     </div>
     <div id="content">
         <div id="row1">
-            <div id="box1">test</div>
-            <div id="box2">test</div>
+            <div id="box1">
+                <script>
+                    const photo_array = [
+                        "view1.jpg",
+                        "view2.jpg",
+                        "view3.jpg",
+                        "view4.jpg",
+                        "view6.jpg",
+                    ];
+                    var i = Math.floor(photo_array.length * Math.random());
+                    document.write(
+                        `<img src = "images/photozone/${photo_array[i]}" style = "width: 200px"; height: 200px">`,
+                    );
+                </script>
+            </div>
+            <div id="box2">
+                <div id="what">
+                    an esoteric network of sights and sounds. abstract in nature
+                    but communicative on a bodily level, speaking not to the
+                    mind but to the primordial neuron that makes one feel.
+                </div>
+            </div>
         </div>
         <div id="row2">
             <div id="box3">test</div>
