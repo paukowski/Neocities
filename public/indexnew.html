@@ -31,9 +31,20 @@
             </div>
             <div id="box2">
                 <div id="what">
-                    an esoteric network of sights and sounds. abstract in nature
-                    but communicative on a bodily level, speaking not to the
-                    mind but to the primordial neuron that makes one feel.
+                    <div id="rss">
+                        <script>
+                            var container = document.createElement("div");
+                            container.innerHTML =
+                                '<h3 class="feed-title"><a href="https://mastodon.social/@paukowski" target="_blank">george<\/a><\/h3><h4 class="feed-item-title"><a href="https://mastodon.social/@paukowski/116945826907999850" target="_blank">(No title)<\/a><\/h4><p class="feed-item-desc"><p>ey<\/p><\/p><div style="text-align: end;">\n  <a href="https://rss.bloople.net/" target="_blank" style="color: #000000;">Powered by RSS 2 HTML<\/a>\n<\/div>\n\n<!-- To create this output, visit: https://rss2html.net/build_embeds/new?embed_render_title=false&feed_render_description=false&feed_render_image=false&strip_html=false&template=legacy&url=https%3A%2F%2Fmastodon.social%2F%40paukowski.rss -->\n';
+                            var nodes = [].slice.call(container.childNodes);
+                            var script =
+                                document.scripts[document.scripts.length - 1];
+                            var parent = script.parentNode;
+                            while (nodes.length > 0)
+                                parent.insertBefore(nodes.shift(), script);
+                            parent.removeChild(script);
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
