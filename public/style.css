@@ -1,99 +1,31 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#wrapper {
+    place-items: center;
+}
+
+#header {
+    place-items: center;
+}
+
+#header_logo {
+    img {
+        width: 500px;
+    }
+}
+
+#header_links {
+    font-family: "Schoolbell";
+    font-size: 2em;
+}
+
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: "Schoolbell";
     font-style: normal;
     font-weight: 400;
     src: url("fonts/schoolbell-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    align-items: center;
-}
-
-#header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-}
-
-#header-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    img {
-        width: 100vmin;
-        max-width: 550px;
-    }
-}
-#header-links {
-    font-size: 2.5rem;
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-    font-family: "Schoolbell";
-    align-items: center;
-}
-
-#content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vmin;
-    max-width: 700px;
-    color: white;
-    gap: 10px;
-}
-
-#row1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-}
-
-#box1 {
-    width: 200px;
-    height: 200px;
-    border: 5px grey solid;
-}
-
-#box2 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 2.65rem;
-    width: 400px;
-    height: 200px;
-    border: 5px grey solid;
-    z-index: 7;
-    div {
-        padding-left: 1vh;
-    }
-}
-#box3 {
-    width: 200px;
-    height: 200px;
-    margin-right: 200px;
-    border: 5px grey solid;
-}
-
-#rss {
-    border: 5px white solid;
-    height: 200px;
-}
-
-.feed-title {
-    font-size: 40px;
-}
-
-.feed-item-title {
-    font-size: 10px;
-}
-
-.feed-item-desc {
-    font-size: 1px;
 }

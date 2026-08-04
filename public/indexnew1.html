@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+    <link rel="stylesheet" href="style.css" />
+    <div id="header">
+        <div id="header-logo">
+            <img src="images/logos/headerlogo.png" />
+        </div>
+        <div id="header-links">
+            <a>index</a>
+            <a>portfolio</a>
+            <a>about</a>
+        </div>
+    </div>
+    <div id="content">
+        <div id="row1">
+            <div id="box1">
+                <script>
+                    const photo_array = [
+                        "view1.jpg",
+                        "view2.jpg",
+                        "view3.jpg",
+                        "view4.jpg",
+                        "view6.jpg",
+                    ];
+                    var i = Math.floor(photo_array.length * Math.random());
+                    document.write(
+                        `<img src = "images/photozone/${photo_array[i]}" style = "width: 200px"; height: 200px">`,
+                    );
+                </script>
+            </div>
+            <div id="box2">
+                <div id="what">
+                    <div id="rss">
+                        <script>
+                            var container = document.createElement("div");
+                            container.innerHTML =
+                                '<h3 class="feed-title"><a href="https://mastodon.social/@paukowski" target="_blank">george<\/a><\/h3><h4 class="feed-item-title"><a href="https://mastodon.social/@paukowski/116945826907999850" target="_blank">(No title)<\/a><\/h4><p class="feed-item-desc"><p>ey<\/p><\/p><div style="text-align: end;">\n  <a href="https://rss.bloople.net/" target="_blank" style="color: #000000;">Powered by RSS 2 HTML<\/a>\n<\/div>\n\n<!-- To create this output, visit: https://rss2html.net/build_embeds/new?embed_render_title=false&feed_render_description=false&feed_render_image=false&strip_html=false&template=legacy&url=https%3A%2F%2Fmastodon.social%2F%40paukowski.rss -->\n';
+                            var nodes = [].slice.call(container.childNodes);
+                            var script =
+                                document.scripts[document.scripts.length - 1];
+                            var parent = script.parentNode;
+                            while (nodes.length > 0)
+                                parent.insertBefore(nodes.shift(), script);
+                            parent.removeChild(script);
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row2">
+            <div id="box3">test</div>
+        </div>
+    </div>
+</html>
