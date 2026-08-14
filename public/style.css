@@ -1,3 +1,12 @@
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Schoolbell";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/schoolbell-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
 body {
     background-color: black;
     color: white;
@@ -21,6 +30,16 @@ body {
 #header_links {
     font-family: "Schoolbell";
     font-size: 2.5em;
+    a:any-link {
+        margin-left: 0.5em;
+        padding-right: 0.5em;
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color: grey;
+    }
+    padding-bottom: 0.2em;
 }
 
 #socials_bar {
@@ -38,6 +57,9 @@ body {
         margin-top: -10px;
         width: 50px;
     }
+    img:hover {
+        filter: brightness(0.5);
+    }
 }
 
 #content {
@@ -48,7 +70,30 @@ body {
     overflow: hidden;
 }
 
+#portfolio_content {
+    width: 700px;
+    min-width: 700px;
+    border: 3px solid white;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
 #line1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size:1.5em;
+    padding-bottom: 10px;
+}
+
+#banner_box {
+    width: 400px;
+    height: 100px;
+    border: 3px solid white;
+}
+
+#line2 {
     display: flex;
     flex-wrap: wrap;
     font-size:1.5em;
@@ -56,7 +101,6 @@ body {
 #text1 {
     width: 450px;
     min-width: 450px;
-
 }
 
 #photo_box {
@@ -69,10 +113,67 @@ body {
     margin-top: 4px;
 }
 
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: "Schoolbell";
-    font-style: normal;
-    font-weight: 400;
-    src: url("fonts/schoolbell-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+#categories_bar {
+    margin-top: 2px;
+    font-size: 1.3em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    padding-bottom: 5px;
+    a {
+        background-color: black;
+        border: white 3px solid;
+        width: fit-content;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 5px ;
+        box-shadow: 5px 5px rgb(0 0 0 / 40%);
+    }
+    width: fit-content;
+    height: fit-content;
+    padding-right: 5px;
+}
+
+#elements {
+    margin-left: 3px;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    div {
+        padding : 2px;
+    }
+    flex-wrap: wrap;
+}
+
+#entry {
+    display: flex;
+    flex-direction: column;
+    button {
+        border: none;
+        background-color: black;
+        font-size: 0.35em;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    button:hover {
+        filter: brightness(0.5);
+    }
+    img{
+        width: 170px;
+        border: white 3px solid;
+    }
+    width:180px;
+    align-items: center;
+}
+
+#modal {
+    border: white 3px solid;
+    position: fixed;
+    background-color: grey;
+    width: 700px;
+    height: 630px;
+    top: 310px;
+    visibility: hidden;
 }
