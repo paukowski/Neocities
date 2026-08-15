@@ -14,11 +14,14 @@ body {
 }
 
 #wrapper {
+    display: grid;
     place-items: center;
+    justify-content: center;
 }
 
 #header {
     place-items: center;
+    justify-content: center;
 }
 
 #header_logo {
