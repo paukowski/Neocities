@@ -16,12 +16,10 @@ body {
 #wrapper {
     display: grid;
     place-items: center;
-    justify-content: center;
 }
 
 #header {
     place-items: center;
-    justify-content: center;
 }
 
 #header_logo {
@@ -81,6 +79,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    background-color: gray;
 }
 
 #line1 {
@@ -152,23 +151,21 @@ body {
 #entry {
     display: flex;
     flex-direction: column;
-    button {
-        border: none;
-        background-color: black;
-        font-size: 0.35em;
-        color: white;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    button:hover {
-        filter: brightness(0.5);
-    }
+    border: none;
+    background-color: grey;
+    font-size: 0.35em;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
     img{
         width: 170px;
         border: white 3px solid;
     }
     width:180px;
     align-items: center;
+}
+
+#entry:hover {
+    filter: brightness(0.5);
 }
 
 #modal {
@@ -179,4 +176,11 @@ body {
     height: 630px;
     top: 310px;
     visibility: hidden;
+}
+.modal_hidden {
+    visibility: hidden;
+}
+
+.modal_open {
+    visibility: visible;
 }
