@@ -197,3 +197,25 @@ body {
 .modal_open {
     visibility: visible;
 }
+
+#pricebox {
+    font-size: 1.1rem;
+    width: 320px;
+    border: 3px solid white;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: gray;
+    box-shadow: 5px 5px rgb(128 128 128 / 70%);
+}
+#unemployed {
+    width: 150px;
+    margin-left: 150px;
+}
+
+#contact {
+    font-size: 1.1rem;
+}
+#line2 {
+    display: flex;
+}
