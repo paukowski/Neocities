@@ -218,4 +218,5 @@ body {
 }
 #line2 {
     display: flex;
+    overflow: hidden;
 }
