@@ -210,9 +210,13 @@ body {
 }
 #unemployed {
     width: 150px;
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
 #contact {
     font-size: 1rem;
+}
+
+#line2 {
+    display: flex;
 }
